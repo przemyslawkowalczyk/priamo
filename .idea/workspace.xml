@@ -2,33 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d40d8578-f903-4779-a2cb-eecf3dc89413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/.finished-upgraders" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/.id" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/platforms" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/release" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/links.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/Hello.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/Info.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/LoginForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/startup/Accounts.startup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/startup/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/server/startup/IStartup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,18 +41,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imports/ui" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,14 +73,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607776408016</updated>
-      <workItem from="1607776409127" duration="1488000" />
+      <workItem from="1607776409127" duration="5333000" />
     </task>
+    <task id="LOCAL-00001" summary="init meteor app">
+      <created>1607778204396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607778204396</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init meteor app" />
+    <option name="LAST_COMMIT_MESSAGE" value="init meteor app" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607778608370">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607778608370" />
+    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1607778204159">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607778204159" />
+    <state x="-700" y="-904" key="SettingsEditor" timestamp="1607782382988">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-700" y="-904" key="SettingsEditor/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607782382988" />
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1607778206774">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607778206774" />
     <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1607776720759">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>

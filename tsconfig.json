@@ -9,7 +9,10 @@
     "jsx": "preserve",
     "incremental": true,
     "noEmit": true,
-
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,
