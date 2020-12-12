@@ -2,15 +2,20 @@ import React from 'react';
 import { useTracker } from 'meteor/react-meteor-data';
 import { Hello } from './Hello';
 import { Info } from './Info';
-import { LoginForm } from './LoginForm';
+import LoginPage from './components/loginPage';
 import { Meteor } from 'meteor/meteor';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "react-bootstrap/cjs/Container";
+import Navbar from './components/navbar';
 
 export const App = () => {
     const user = useTracker(() => Meteor.user());
     const logout = () => Meteor.logout();
 
+    let content = <LoginPage />;
+
     if (user) {
-        return (
+        content = (
             <div>
                 <button className="user" onClick={logout}>
                     {user.username} logout
@@ -22,6 +27,12 @@ export const App = () => {
         );
     }
 
-    return <LoginForm />
-
+    return (
+        <>
+            <Navbar />
+            <Container className="mt-5">
+                {content}
+            </Container>
+        </>
+    )
 }
