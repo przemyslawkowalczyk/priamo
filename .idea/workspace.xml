@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d40d8578-f903-4779-a2cb-eecf3dc89413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/api/methods/AccountsMethods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/actions/loginPage/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/form/PriamoFormGroup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/helloCard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/signupPage/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/utils/errorHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/ui/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/api/links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/collections/links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/Info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/Info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/loginPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/Hello.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/Info.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/loginPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/loginPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -57,6 +68,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/imports/ui/components" />
+      <recent name="$PROJECT_DIR$/imports/ui/components/loginPage" />
       <recent name="$PROJECT_DIR$/imports/ui/components/login" />
       <recent name="$PROJECT_DIR$/imports/api/collections" />
       <recent name="$PROJECT_DIR$/imports/ui" />
@@ -70,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607776408016</updated>
-      <workItem from="1607776409127" duration="10875000" />
+      <workItem from="1607776409127" duration="27684000" />
     </task>
     <task id="LOCAL-00001" summary="init meteor app">
       <created>1607778204396</created>
@@ -86,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607782854279</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="yup^^Ļ">
+      <created>1607789559443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607789559444</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,40 +115,45 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init meteor app" />
     <MESSAGE value="user management^" />
-    <option name="LAST_COMMIT_MESSAGE" value="user management^" />
+    <MESSAGE value="yup^^Ļ" />
+    <option name="LAST_COMMIT_MESSAGE" value="yup^^Ļ" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607778608370">
+    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607791237960">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607778608370" />
-    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1607782854097">
+    <state x="-478" y="-734" key="#com.intellij.fileTypes.FileTypeChooser/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607791237960" />
+    <state x="-471" y="-789" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607792785722">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607782854097" />
+    <state x="-471" y="-789" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607792785722" />
+    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1607789559231">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607789559231" />
     <state x="-700" y="-904" key="SettingsEditor" timestamp="1607782382988">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-700" y="-904" key="SettingsEditor/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607782382988" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1607787334801">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1607886859432">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607787334801" />
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1607782857402">
+    <state width="500" height="445" key="SwitcherDM/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607886859432" />
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1607789560763">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607782857402" />
-    <state x="-510" y="-785" width="602" height="490" key="find.popup" timestamp="1607787405956">
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607789560763" />
+    <state x="-510" y="-785" width="602" height="490" key="find.popup" timestamp="1607891874600">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-510" y="-785" width="602" height="490" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607787405956" />
+    <state x="-510" y="-785" width="602" height="490" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607891874600" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1607788131771">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state width="600" height="428" key="javadoc.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607788131771" />
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1607776720759">
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1607789882326">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607776720759" />
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607789882326" />
   </component>
 </project>
