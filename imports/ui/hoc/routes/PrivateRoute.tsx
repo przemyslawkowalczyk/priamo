@@ -31,9 +31,11 @@ const PrivateRoute = ({ children, role, ...rest }) => {
 //     roles: []
 // }
 
+
 PrivateRoute.propTypes = {
     children: propTypes.element.isRequired,
-    roles: propTypes.arrayOf(['teacher', 'student'])
+    // @ts-ignore
+    roles: propTypes.oneOf(['teacher', 'student', propTypes.instanceOf(null)])
 }
 
 export default PrivateRoute;

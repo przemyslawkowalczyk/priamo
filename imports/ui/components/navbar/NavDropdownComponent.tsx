@@ -10,7 +10,7 @@ const NavDropdownComponent = ({ auth }) => {
         <>
             <NavDropdown.Item>
                 {
-                    auth.user?.roles.isTeacher && (
+                    auth.user?.roles?.isTeacher && (
                         <NavLink to="/class-management">
                             zarządaj klasami
                         </NavLink>

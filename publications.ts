@@ -1,6 +1,10 @@
 const publications = {
     user: {
-        profile: 'user.profile'
+        profile: 'user.profile',
+        allStudentProfiles: 'user.allStudentProfiles',
+    },
+    classes: {
+        ownClasses: 'classes.ownClasses'
     }
 }
 

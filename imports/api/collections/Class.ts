@@ -1,7 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 
 export interface IClass {
-    _id?: string;
+    _id: string;
     name: string;
     avatar: string;
     teacher: Mongo.ObjectID,
@@ -11,4 +11,3 @@ export interface IClass {
 const ClassCollection = new Mongo.Collection<IClass>('Class');
 
 export { ClassCollection as default };
-

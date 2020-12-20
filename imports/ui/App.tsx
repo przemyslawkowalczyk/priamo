@@ -8,6 +8,7 @@ import { AuthProvider } from "/imports/ui/contexts/authContext";
 // PAGES
 import UserAccountPage from "/imports/ui/pages/userAccountPage";
 import SignupPage from './pages/signupPage';
+import ClassManagementPage from '/imports/ui/pages/classManagementPage';
 import PageNotFound from '/imports/ui/pages/errors/PageNotFound';
 
 // COMPONENTS
@@ -17,6 +18,10 @@ import Navbar from './components/navbar';
 import PrivateRoute from "/imports/ui/hoc/routes/PrivateRoute";
 import PublicRoute from "/imports/ui/hoc/routes/PublicRoute";
 
+// PROVIDERS
+import { StudentsProvider } from './contexts/studentsContext';
+
+// STYLES
 import './styles/common.less';
 
 export const App = () => (
@@ -33,6 +38,11 @@ export const App = () => (
                     </PublicRoute>
                     <PrivateRoute path='/home'>
                         <p>home</p>
+                    </PrivateRoute>
+                    <PrivateRoute path='/class-management' role="teacher">
+                        <StudentsProvider>
+                            <ClassManagementPage />
+                        </StudentsProvider>
                     </PrivateRoute>
                     <PrivateRoute path="/account-settings">
                         <UserAccountPage />

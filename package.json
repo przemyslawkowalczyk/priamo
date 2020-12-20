@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "@types/meteor-roles": "^1.2.32",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "bcrypt": "^5.0.0",
@@ -21,6 +24,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1",
     "react-notify-toast": "^0.5.1",
     "react-router-dom": "^5.2.0",
     "tslint-config-standard": "^9.0.0",
