@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import propTypes from 'prop-types';
-import {  Redirect, Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import authContext, { IAuth } from '../../contexts/authContext';
 
 // @ts-ignore

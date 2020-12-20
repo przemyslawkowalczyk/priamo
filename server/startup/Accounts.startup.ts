@@ -1,5 +1,5 @@
 import { Accounts } from 'meteor/accounts-base';
-import config from '/server/config';
+import config from '/config/config';
 import IStartup from "/types/server/startup/IStartup";
 
 class AccountsStartup implements IStartup {

@@ -5,7 +5,7 @@ import ErrorBoundary from '../ErrorBoundary';
 import authContext, { IAuth } from '../../contexts/authContext';
 import NavDropdownComponent from "./NavDropdownComponent";
 
-import '../../styles/navbar.less';
+import './navbar.less';
 
 const navbar = () => {
     const auth = useContext(authContext) as IAuth;

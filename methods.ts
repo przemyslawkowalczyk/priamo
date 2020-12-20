@@ -1,6 +1,7 @@
 const methods = {
     accounts: {
-        create: 'account.create'
+        create: 'account.create',
+        uploadAvatar: 'account.uploadAvatar',
     }
 }
 

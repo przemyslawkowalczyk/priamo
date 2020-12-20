@@ -1,24 +1,42 @@
 import React from "react";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Image from "react-bootstrap/Image";
 import {Meteor} from "meteor/meteor";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import UserAvatar from "/imports/ui/components/user/UserAvatar";
 
 // @ts-ignore
 const NavDropdownComponent = ({ auth }) => {
-    const picSrc: string = auth.user?.avatarSrc || "/pictures/no-user.png";
+    const userList = (
+        <>
+            <NavDropdown.Item>
+                <NavLink to="/account-settings">
+                    ustawienia konta
+                </NavLink>
+            </NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item onClick={() => Meteor.logout()}>
+                Logout
+            </NavDropdown.Item>
+        </>
+    )
+
+    const nonUserList = (
+        <>
+            <NavDropdown.Divider />
+            <NavDropdown.Item>
+                <NavLink to="/">
+                    Login
+                </NavLink>
+            </NavDropdown.Item>
+        </>
+    );
 
     return (
         <NavDropdown
-            title={<Image roundedCircle src={picSrc} />}
+            title={<UserAvatar user={auth.user}/>}
             id="navbar-dropdown-toggle"
         >
-            <NavDropdown.Divider />
-            {
-                auth.user
-                    ? <NavDropdown.Item onClick={() => Meteor.logout()}>Logout</NavDropdown.Item>
-                    : <Link to="/"><NavDropdown.Item>Login</NavDropdown.Item></Link>
-            }
+            {auth.user ? userList : nonUserList }
         </NavDropdown>
     );
 }

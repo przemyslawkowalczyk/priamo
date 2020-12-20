@@ -15,8 +15,18 @@ class AccountsMethods {
 
         Accounts.createUser(_.pick(val, ['username', 'email', 'password']));
     }
+    static uploadUserAvatar(data: ArrayBuffer, user: Meteor.User) {
+        return Meteor.users.update(user._id, {
+            $set: {
+                profile: {
+                    avatar: data
+                }
+            }
+        });
+    }
 }
 
 Meteor.methods({
-    [methods.accounts.create]: AccountsMethods.createAccount
+    [methods.accounts.create]: AccountsMethods.createAccount,
+    [methods.accounts.uploadAvatar]: AccountsMethods.uploadUserAvatar
 });
