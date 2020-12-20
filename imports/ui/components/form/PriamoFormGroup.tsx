@@ -1,6 +1,6 @@
 import * as _ from 'lodash';
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import Form from "react-bootstrap/Form";
 
 // @ts-ignore
@@ -29,9 +29,9 @@ const PriamoFormGroup = ({ formikProps, name, label, ...rest }) => {
 };
 
 PriamoFormGroup.propTypes = {
-    name: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    formikProps: PropTypes.object.isRequired,
+    name: propTypes.string.isRequired,
+    label: propTypes.string.isRequired,
+    formikProps: propTypes.object.isRequired,
 };
 
 export default PriamoFormGroup;

@@ -1,6 +1,6 @@
 import React from "react";
 import Col from "react-bootstrap/cjs/Col";
-import HelloCard from '../helloCard';
+import HelloCard from '../../components/helloCard';
 import Row from "react-bootstrap/Row";
 import { withRouter } from 'react-router-dom'
 import { Formik, FormikProps, FormikValues } from "formik";
@@ -8,9 +8,9 @@ import yup from 'yup';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { IFormValues } from '/types/common';
-import methods from '/methods';
+import methods from '../../../../methods';
 import { Meteor } from 'meteor/meteor';
-import PriamoFormGroup from '../form/PriamoFormGroup';
+import PriamoFormGroup from '../../components/form/PriamoFormGroup';
 import errorHandler from '/imports/ui/utils/errorHandler';
 // @ts-ignore
 import { notify } from 'react-notify-toast';
@@ -70,7 +70,7 @@ const signupPage = ({ history }) => {
                     onSubmit={onSubmit}
                 >
                     {(props: FormikProps<FormikValues>) => {
-                        const { handleSubmit, isValid, dirty, values, handleChange, handleBlur, errors, touched } = props;
+                        const { handleSubmit, isValid, dirty, values, handleChange, handleBlur, errors } = props;
 
                         return (
                             <Form noValidate onSubmit={handleSubmit}>
@@ -106,7 +106,7 @@ const signupPage = ({ history }) => {
                                         value={values.acceptTerms}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
-                                        isInvalid={errors.acceptTerms}
+                                        isInvalid={!!errors.acceptTerms}
                                     />
                                     <Form.Control.Feedback type="invalid">
                                         {errors.acceptTerms}

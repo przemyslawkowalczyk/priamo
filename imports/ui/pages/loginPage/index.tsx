@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Formik } from 'formik';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 import yup from 'yup';
 import actions from '../../actions/loginPage';
-import HelloCard from '../helloCard';
+import HelloCard from '../../components/helloCard';
+import authContext, { IAuth } from '../../contexts/authContext';
 
 interface IFormValues {
     username: string;
@@ -32,10 +33,11 @@ const validationSchema = yup.object({
 
 const login = () => {
     const [loginError, setLoginError] = useState('');
+    // const auth = useContext(authContext) as IAuth;
 
     const onSubmit = ({ username, password }: IFormValues): void => {
         actions.loginWithPassword(username, password, e => {
-            setLoginError((e as { reason: string }).reason);
+            e && setLoginError((e as { reason: string }).reason);
         });
     }
 

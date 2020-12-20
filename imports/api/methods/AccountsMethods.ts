@@ -1,6 +1,5 @@
 import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
-import { Email } from 'meteor/email';
 import { Match } from 'meteor/check';
 import { Accounts } from 'meteor/accounts-base'
 import { IFormValues } from '/types/common';
@@ -14,9 +13,7 @@ class AccountsMethods {
             password: String
         });
 
-        const userId: string = Accounts.createUser(_.pick(val, ['username', 'email', 'password']));
-        console.log(userId);
-        // TODO Accounts.sendVerificationEmail(userId);
+        Accounts.createUser(_.pick(val, ['username', 'email', 'password']));
     }
 }
 
