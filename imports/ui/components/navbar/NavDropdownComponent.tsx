@@ -2,7 +2,10 @@ import React from "react";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import {Meteor} from "meteor/meteor";
 import {NavLink} from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 import UserAvatar from "/imports/ui/components/user/UserAvatar";
+// @ts-ignore
+import { LinkContainer } from 'react-router-bootstrap';
 
 // @ts-ignore
 const NavDropdownComponent = ({ auth }) => {
@@ -16,7 +19,6 @@ const NavDropdownComponent = ({ auth }) => {
                         </NavLink>
                     )
                 }
-
             </NavDropdown.Item>
             <NavDropdown.Item>
                 <NavLink to="/account-settings">
@@ -33,11 +35,11 @@ const NavDropdownComponent = ({ auth }) => {
     const nonUserList = (
         <>
             <NavDropdown.Divider />
-            <NavDropdown.Item>
-                <NavLink to="/">
+            <LinkContainer to="/">
+                <Button variant="link">
                     Login
-                </NavLink>
-            </NavDropdown.Item>
+                </Button>
+            </LinkContainer>
         </>
     );
 

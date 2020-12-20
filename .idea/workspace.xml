@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d40d8578-f903-4779-a2cb-eecf3dc89413" name="Default Changelist" comment="add Class interface">
-      <change afterPath="$PROJECT_DIR$/imports/api/methods/ClassMethods.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/publications/ClassPublications.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/ModalWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/class/AddClassModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/class/ClassList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/class/ClassPanel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/contexts/studentsContext.tsx" afterDir="false" />
+    <list default="true" id="d40d8578-f903-4779-a2cb-eecf3dc89413" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/pictures/teacher-pic.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/api/collections/Class.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/collections/Class.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/api/publications/AccountPublications.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/publications/AccountPublications.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/helloCard/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/helloCard/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/NavDropdownComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/NavDropdownComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/hoc/routes/PrivateRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/hoc/routes/PrivateRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/classManagementPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/classManagementPage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/methods.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/loginPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/loginPage/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publications.ts" beforeDir="false" afterPath="$PROJECT_DIR$/publications.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +47,7 @@
     <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/pictures" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,6 +65,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/pictures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/imports/ui/components" />
       <recent name="$PROJECT_DIR$/config" />
@@ -90,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607776408016</updated>
       <workItem from="1607776409127" duration="28059000" />
-      <workItem from="1608461259248" duration="34632000" />
+      <workItem from="1608461259248" duration="37115000" />
     </task>
     <task id="LOCAL-00001" summary="init meteor app">
       <created>1607778204396</created>
@@ -148,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608494516983</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fetch students list">
+      <created>1608501653775</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608501653775</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +167,8 @@
     <MESSAGE value="install less" />
     <MESSAGE value="upload picturesŻ" />
     <MESSAGE value="add Class interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Class interface" />
+    <MESSAGE value="fetch students list" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetch students list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-343" y="-644" key="#ESLint" timestamp="1608473852769">
@@ -180,10 +183,10 @@
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-471" y="-789" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607792785722" />
-    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1608499013603">
+    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1608501653541">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608499013603" />
+    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608501653541" />
     <state x="-700" y="-904" key="SettingsEditor" timestamp="1608473867921">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
@@ -192,14 +195,14 @@
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state width="500" height="445" key="SwitcherDM/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608480349989" />
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1608494517706">
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1608501654926">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608494517706" />
-    <state x="-510" y="-785" width="602" height="522" key="find.popup" timestamp="1608499079169">
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608501654926" />
+    <state x="-510" y="-785" width="602" height="522" key="find.popup" timestamp="1608502667400">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-510" y="-785" width="602" height="522" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608499079169" />
+    <state x="-510" y="-785" width="602" height="522" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608502667400" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1608497559392">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
@@ -208,9 +211,9 @@
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-425" y="-762" key="refactoring.ChangeSignatureDialog/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608490534717" />
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1608499905901">
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1608503089435">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608499905901" />
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608503089435" />
   </component>
 </project>

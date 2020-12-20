@@ -102,7 +102,7 @@ const login = () => {
                             <Button variant="primary" type="submit" disabled={!isValid}>
                                 Login
                             </Button>
-                            <Link to="/signup">
+                            <Link to="/signup" className="ml-3">
                                 Rejestracja
                             </Link>
                         </Form>

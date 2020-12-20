@@ -13,19 +13,27 @@ const navbar = () => {
 
     return (
         <ErrorBoundary>
-            <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
+            <Navbar
+                className="d-flex justify-content-between bg-white"
+                expand="lg"
+                bg="light"
+            >
                 <Link to="/">
                     <Navbar.Brand>
                         Прямо
                     </Navbar.Brand>
                 </Link>
                 <Row>
-                    <p
-                        style={{ lineHeight: '2rem', marginBottom: '6px', marginTop: '8px' }}
-                        className="badge badge-warning"
-                    >
-                        {auth.user?.roles?.isTeacher ? 'Nauczyciel' : "Uczeń"}
-                    </p>
+                    {
+                        auth.user?.roles && (
+                            <p
+                                style={{ lineHeight: '2rem', marginBottom: '6px', marginTop: '8px' }}
+                                className="badge badge-warning"
+                            >
+                                {auth.user?.roles?.isTeacher ? 'Nauczyciel' : "Uczeń"}
+                            </p>
+                        )
+                    }
                     <NavDropdownComponent auth={auth} />
                 </Row>
             </Navbar>
