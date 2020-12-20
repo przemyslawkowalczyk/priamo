@@ -1,32 +1,24 @@
 import React, { useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from 'react-bootstrap/Nav';
-import Button from "react-bootstrap/Button";
-import { Meteor } from "meteor/meteor";
+import { Link } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundary';
 import authContext, { IAuth } from '../../contexts/authContext';
+import NavDropdownComponent from "./NavDropdownComponent";
+
+import '../../styles/navbar.less';
 
 const navbar = () => {
     const auth = useContext(authContext) as IAuth;
 
     return (
         <ErrorBoundary>
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        {
-                            auth.user && (
-                                <Nav.Item>
-                                     <Button onClick={() => Meteor.logout()}>
-                                         Logout
-                                     </Button>
-                                 </Nav.Item>
-                            )
-                        }
-                    </Nav>
-                </Navbar.Collapse>
+            <Navbar bg="light" expand="lg" className="d-flex justify-content-between">
+                <Link to="/">
+                    <Navbar.Brand>
+                        Прямо
+                    </Navbar.Brand>
+                </Link>
+                <NavDropdownComponent auth={auth} />
             </Navbar>
         </ErrorBoundary>
     );

@@ -9,7 +9,8 @@ import SignupPage from './pages/signupPage';
 import Notifications from 'react-notify-toast';
 import PageNotFound from '/imports/ui/pages/errors/PageNotFound';
 import { AuthProvider } from "/imports/ui/contexts/authContext";
-import PrivateRoute from "/imports/ui/components/PrivateRoute";
+import PrivateRoute from "/imports/ui/hoc/routes/PrivateRoute";
+import PublicRoute from "/imports/ui/hoc/routes/PublicRoute";
 
 export const App = () => (
     <AuthProvider>
@@ -17,9 +18,15 @@ export const App = () => (
             <Navbar />
             <Container className="mt-5">
                 <Switch>
-                    <Route path="/" exact component={LoginPage} />
-                    <Route path="/signup" component={SignupPage} />
-                    <PrivateRoute path='/home'><p>home</p></PrivateRoute>
+                    <PublicRoute path="/" exact>
+                        <LoginPage />
+                    </PublicRoute>
+                    <PublicRoute path="/signup">
+                        <SignupPage />
+                    </PublicRoute>
+                    <PrivateRoute path='/home'>
+                        <p>home</p>
+                    </PrivateRoute>
                     <Route path="*" component={PageNotFound} />
                 </Switch>
             </Container>

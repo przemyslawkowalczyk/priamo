@@ -1,16 +1,15 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import yup from 'yup';
 import actions from '../../actions/loginPage';
 import HelloCard from '../../components/helloCard';
-import authContext, { IAuth } from '../../contexts/authContext';
 
 interface IFormValues {
     username: string;
@@ -33,7 +32,6 @@ const validationSchema = yup.object({
 
 const login = () => {
     const [loginError, setLoginError] = useState('');
-    // const auth = useContext(authContext) as IAuth;
 
     const onSubmit = ({ username, password }: IFormValues): void => {
         actions.loginWithPassword(username, password, e => {
@@ -80,7 +78,7 @@ const login = () => {
                                     name="username"
                                     value={values.username}
                                     onChange={handleChange}
-                                    isInvalid={errors.username}
+                                    isInvalid={!!errors.username}
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     {errors.username}
@@ -95,7 +93,7 @@ const login = () => {
                                     name="password"
                                     value={values.password}
                                     onChange={handleChange}
-                                    isInvalid={errors.password}
+                                    isInvalid={!!errors.password}
                                 />
                                 <Form.Control.Feedback type="invalid">
                                     {errors.password}
