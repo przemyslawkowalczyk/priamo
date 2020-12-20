@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
+import Row from "react-bootstrap/Row";
 import { Link } from 'react-router-dom';
 import ErrorBoundary from '../ErrorBoundary';
 import authContext, { IAuth } from '../../contexts/authContext';
@@ -18,7 +19,15 @@ const navbar = () => {
                         Прямо
                     </Navbar.Brand>
                 </Link>
-                <NavDropdownComponent auth={auth} />
+                <Row>
+                    <p
+                        style={{ lineHeight: '2rem', marginBottom: '6px', marginTop: '8px' }}
+                        className="badge badge-warning"
+                    >
+                        {auth.user?.roles?.isTeacher ? 'Nauczyciel' : "Uczeń"}
+                    </p>
+                    <NavDropdownComponent auth={auth} />
+                </Row>
             </Navbar>
         </ErrorBoundary>
     );

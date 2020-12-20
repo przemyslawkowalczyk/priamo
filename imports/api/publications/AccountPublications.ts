@@ -5,6 +5,7 @@ Meteor.publish(publications.user.profile, (userId) => {
     return Meteor.users.findOne(userId, {
         fields: {
             avatar: 1,
+            roles: 1
         }
     });
 });

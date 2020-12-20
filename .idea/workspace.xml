@@ -5,32 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d40d8578-f903-4779-a2cb-eecf3dc89413" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/uploadFS.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/api/publications/AccountPublications.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/actions/userAccountPage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/components/user/UserAvatar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/MainUserPanel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/userAccountPage.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publications.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/api/collections/Class.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/classManagementPage/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/styles/common.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/api/methods/AccountsMethods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/methods/AccountsMethods.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/publications/AccountPublications.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/publications/AccountPublications.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/actions/userAccountPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/actions/userAccountPage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/NavDropdownComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/NavDropdownComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/contexts/authContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/contexts/authContext.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/hoc/routes/PrivateRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/hoc/routes/PrivateRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/hoc/routes/PublicRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/hoc/routes/PublicRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/styles/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/methods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/methods.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/MainUserPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/MainUserPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/userAccountPage.less" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/userAccountPage/userAccountPage.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/utils/errorHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/utils/errorHandler.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/startup/Accounts.startup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/startup/Accounts.startup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/common.ts" afterDir="false" />
     </list>
@@ -100,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607776408016</updated>
       <workItem from="1607776409127" duration="28059000" />
-      <workItem from="1608461259248" duration="22333000" />
+      <workItem from="1608461259248" duration="27622000" />
     </task>
     <task id="LOCAL-00001" summary="init meteor app">
       <created>1607778204396</created>
@@ -144,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608472818489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="upload picturesŻ">
+      <created>1608488819916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608488819916</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +161,8 @@
     <MESSAGE value="create accounts" />
     <MESSAGE value="private route" />
     <MESSAGE value="install less" />
-    <option name="LAST_COMMIT_MESSAGE" value="install less" />
+    <MESSAGE value="upload picturesŻ" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload picturesŻ" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-343" y="-644" key="#ESLint" timestamp="1608473852769">
@@ -174,10 +177,10 @@
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-471" y="-789" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607792785722" />
-    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1608472818268">
+    <state x="-616" y="-968" key="CommitChangelistDialog2" timestamp="1608488819652">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608472818268" />
+    <state x="-616" y="-968" key="CommitChangelistDialog2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608488819652" />
     <state x="-700" y="-904" key="SettingsEditor" timestamp="1608473867921">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
@@ -186,21 +189,25 @@
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state width="500" height="445" key="SwitcherDM/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608480349989" />
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1608472819486">
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2" timestamp="1608488820758">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608472819486" />
-    <state x="-510" y="-785" width="602" height="518" key="find.popup" timestamp="1608485601502">
+    <state x="-609" y="-803" key="Vcs.Push.Dialog.v2/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608488820758" />
+    <state x="-510" y="-785" width="602" height="518" key="find.popup" timestamp="1608494338975">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-510" y="-785" width="602" height="518" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608485601502" />
+    <state x="-510" y="-785" width="602" height="518" key="find.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608494338975" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1607788131771">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
     <state width="600" height="428" key="javadoc.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1607788131771" />
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1608485701259">
+    <state x="-425" y="-762" key="refactoring.ChangeSignatureDialog" timestamp="1608490534717">
       <screen x="-1169" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608485701259" />
+    <state x="-425" y="-762" key="refactoring.ChangeSignatureDialog/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608490534717" />
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1608492781334">
+      <screen x="-1169" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-544" y="-839" width="670" height="676" key="search.everywhere.popup/751.-1080.1920.1080/0.0.1440.900/-1169.-1080.1920.1080@-1169.-1080.1920.1080" timestamp="1608492781334" />
   </component>
 </project>

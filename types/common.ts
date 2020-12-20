@@ -11,5 +11,8 @@ export interface IFormValues {
 export interface IUser extends Meteor.User {
     profile?: {
         avatar?: number[];
+    },
+    roles?: {
+        isTeacher?: boolean;
     }
 }

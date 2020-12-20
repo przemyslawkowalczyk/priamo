@@ -5,18 +5,12 @@ import { Redirect, Route } from 'react-router-dom';
 import authContext, { IAuth } from '../../contexts/authContext';
 
 // @ts-ignore
-const PrivateRoute = ({ children, ...rest }) => {
+const PrivateRoute = ({ children, role, ...rest }) => {
     const auth = useContext(authContext) as IAuth;
 
     const hasAllRequiredRoles = (): boolean => {
+        if (role) return !!auth.user && _.get(auth.user, `roles.is${_.capitalize(role)}`, false);
         return !!auth.user;
-
-        // TODO
-        // if (roles) return _(roles)
-        //     .filter(({ role }) => (auth?.user?.roles || []).includes(role))
-        //     .compact()
-        //     .value()
-        //     .length === roles.length;
     };
 
     if (auth.isPending) return null;
@@ -39,7 +33,7 @@ const PrivateRoute = ({ children, ...rest }) => {
 
 PrivateRoute.propTypes = {
     children: propTypes.element.isRequired,
-    // roles: propTypes.arrayOf(propTypes.string)
+    roles: propTypes.arrayOf(['teacher', 'student'])
 }
 
 export default PrivateRoute;

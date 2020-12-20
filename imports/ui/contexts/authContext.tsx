@@ -6,7 +6,7 @@ import publications from "/publications";
 import { IUser } from '/types/common';
 
 export interface IAuth {
-    user?: IUser | null;
+    user?: IUser | undefined | null;
     roles?: Array<string>;
     isPending: boolean;
 }
@@ -17,7 +17,7 @@ const authContext = createContext();
 // @ts-ignore
 export const AuthProvider = ({ children }) => {
     const auth: IAuth = {
-        isPending: true
+        isPending: true,
     };
 
     auth.user = useTracker(() => Meteor.user());

@@ -17,6 +17,8 @@ import Navbar from './components/navbar';
 import PrivateRoute from "/imports/ui/hoc/routes/PrivateRoute";
 import PublicRoute from "/imports/ui/hoc/routes/PublicRoute";
 
+import './styles/common.less';
+
 export const App = () => (
     <AuthProvider>
         <Router>

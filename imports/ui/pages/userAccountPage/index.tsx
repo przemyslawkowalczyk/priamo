@@ -6,6 +6,7 @@ const UserAccountPage = () => {
     const auth = useContext(authContext) as IAuth;
 
     return (
+        // @ts-ignore
         <MainUserPanel user={auth.user} />
     );
 }
